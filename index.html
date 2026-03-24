@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional digital agency providing high-quality banners, modern websites, and game development services.">
+    <title>JAYVEER Digital | Work & Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob-bg"></div>
+    <div class="blob-bg blob-2"></div>
+    
+    <!-- Announcement Bar -->
+    <div class="top-bar" id="topBar">
+        <span>🎉 Special Launch Offer &mdash; <strong>20% off</strong> all products this week!</span>
+        <a href="#products" class="top-bar-link">Claim Now &rarr;</a>
+        <button class="top-bar-close" id="closeTopBar" aria-label="Dismiss">&times;</button>
+    </div>
+
+    <header class="glass-header" id="mainHeader">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home" style="text-decoration:none;">
+                    <span class="logo-text">JAYVEER<span class="highlight">.</span></span>
+                    <span class="logo-tagline">Digital Agency</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="has-dropdown">
+                    <a href="#products">Products <span class="arrow">&#8964;</span></a>
+                    <div class="dropdown-menu glass-card">
+                        <a href="#products" class="dropdown-item">
+                            <span class="drop-icon">🌐</span>
+                            <div>
+                                <strong>Custom Home Page</strong>
+                                <p>Modern, responsive landing pages</p>
+                            </div>
+                        </a>
+                        <a href="#products" class="dropdown-item">
+                            <span class="drop-icon">📢</span>
+                            <div>
+                                <strong>Ad Banner Package</strong>
+                                <p>High-converting HTML5 banners</p>
+                            </div>
+                        </a>
+                        <a href="#products" class="dropdown-item">
+                            <span class="drop-icon">🎮</span>
+                            <div>
+                                <strong>HTML5 Mini-Game</strong>
+                                <p>Engage users with browser games</p>
+                            </div>
+                        </a>
+                        <a href="#products" class="dropdown-item">
+                            <span class="drop-icon">🎓</span>
+                            <div>
+                                <strong>Academic Projects</strong>
+                                <p>Mini, School & College solutions</p>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li><a href="#portfolio">Work</a></li>
+                <li id="dashboard-nav-item" style="display:none;"><a href="#dashboard" id="dashboardBtn">Dashboard</a></li>
+                <li id="auth-nav-item">
+                    <a href="#" id="authBtn" class="btn-primary outline">Log In</a>
+                    <div class="user-badge" id="userBadge" style="display:none;">
+                        <div class="user-avatar" id="userAvatar"></div>
+                        <span id="userName"></span>
+                        <a href="#" id="authBtn2" class="user-logout-link">(Log Out)</a>
+                    </div>
+                </li>
+                <li><a href="#contact" class="btn-primary">Get in Touch</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle theme" title="Switch theme">
+                    <span id="themeIcon">☀️</span>
+                </button>
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero fade-in-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Crafting <span class="gradient-text">Digital Experiences</span> That Deliver Results</h1>
+                <p class="hero-subtitle">We build premium websites, engaging games, and eye-catching banners to elevate your brand.</p>
+                <div class="hero-cta">
+                    <a href="#products" class="btn-primary btn-large">View Our Products</a>
+                    <a href="#portfolio" class="btn-secondary btn-large">See Our Work</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="glass-card hero-glass">
+                    <div class="card-header">
+                        <div class="dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Creative Solutions</h3>
+                        <div class="skeleton-line"></div>
+                        <div class="skeleton-line short"></div>
+                        <div class="stats-row">
+                            <div class="stat-circle">99%</div>
+                            <div class="stat-circle secondary">Top</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about fade-in-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Who We Are</h2>
+                    <p>Your dedicated partners in digital innovation</p>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>Passionate about design and code</h3>
+                        <p>We are a forward-thinking digital studio specializing in a wide range of creative and technical services. Our mission is to transform your ideas into reality through cutting-edge technology and stunning aesthetics.</p>
+                        <ul class="feature-list">
+                            <li>Modern Web Development</li>
+                            <li>Interactive Game Design</li>
+                            <li>High-Conversion Banners</li>
+                        </ul>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-box glass-card">
+                            <h4 class="gradient-text">150+</h4>
+                            <p>Projects Delivered</p>
+                        </div>
+                        <div class="stat-box glass-card">
+                            <h4 class="gradient-text">50+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products fade-in-section">
+            <div class="container">
+                <div class="section-header center">
+                    <h2>Our Premium Products</h2>
+                    <p>High-quality digital assets available for purchase</p>
+                </div>
+                <div class="product-grid">
+                    <!-- Product 1: Website -->
+                    <div class="product-card glass-card">
+                        <div class="product-img-container" id="prod-img-website"></div>
+                        <div class="product-info">
+                            <span class="badge">Web Design</span>
+                            <h3>Custom Home Page</h3>
+                            <p>A fully responsive, highly optimized, and aesthetically pleasing landing page tailored to your brand.</p>
+                            <div class="product-footer">
+<span class="price">₹499</span>
+                                <button class="btn-primary outline purchase-btn">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2: Banner -->
+                    <div class="product-card glass-card">
+                        <div class="product-img-container" id="prod-img-banner"></div>
+                        <div class="product-info">
+                            <span class="badge">Marketing</span>
+                            <h3>Ad Banner Package</h3>
+                            <p>Set of 5 high-converting, animated HTML5 or static banners optimized for multiple ad networks.</p>
+                            <div class="product-footer">
+<span class="price">₹149</span>
+                                <button class="btn-primary outline purchase-btn">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3: Game -->
+                    <div class="product-card glass-card">
+                        <div class="product-img-container" id="prod-img-game"></div>
+                        <div class="product-info">
+                            <span class="badge">Development</span>
+                            <h3>HTML5 Mini-Game</h3>
+                            <p>Engaging browser-based game to boost user retention and interactive marketing campaigns.</p>
+                            <div class="product-footer">
+<span class="price">₹899</span>
+                                <button class="btn-primary outline purchase-btn">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4: Mini Project -->
+                    <div class="product-card glass-card">
+                        <div class="product-img-container" id="prod-img-mini"></div>
+                        <div class="product-info">
+                            <span class="badge">Academic</span>
+                            <h3>Mini Project</h3>
+                            <p>Quick, high-quality small scale applications for your basic academic software requirements.</p>
+                            <div class="product-footer">
+<span class="price">₹99</span>
+                                <button class="btn-primary outline purchase-btn">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5: AI Bot -->
+                    <div class="product-card glass-card highlighted-product">
+                        <div class="product-img-container" id="prod-img-ai"></div>
+                        <div class="product-info">
+                            <span class="badge">Advanced AI</span>
+                            <h3>AI Chatbot Integration</h3>
+                            <p>Custom-trained AI assistant for your website to handle customer queries and boost sales 24/7.</p>
+                            <div class="product-footer">
+<span class="price">₹299</span>
+                                <button class="btn-primary outline purchase-btn">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 5: School Project -->
+                    <div class="product-card glass-card">
+                        <div class="product-img-container" id="prod-img-school"></div>
+                        <div class="product-info">
+                            <span class="badge">Academic</span>
+                            <h3>School Project</h3>
+                            <p>Comprehensive project modules with detailed documentation and step-by-step guidance for school students.</p>
+                            <div class="product-footer">
+<span class="price">₹199</span>
+                                <button class="btn-primary outline purchase-btn">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 6: College Project -->
+                    <div class="product-card glass-card">
+                        <div class="product-img-container" id="prod-img-college"></div>
+                        <div class="product-info">
+                            <span class="badge">Academic</span>
+                            <h3>College Project</h3>
+                            <p>Advanced engineering and science major projects with innovative technical architectures and research reports.</p>
+                            <div class="product-footer">
+                                <span class="price">$499</span>
+                                <button class="btn-primary outline purchase-btn">Purchase</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio fade-in-section">
+            <div class="container">
+                <div class="section-header right">
+                    <h2>Recent Work</h2>
+                    <p>Some of our proudest creations</p>
+                </div>
+                <div class="portfolio-showcase">
+                    <div class="portfolio-item glass-card double-span">
+                        <div class="portfolio-content">
+                            <h3>E-Commerce Revolution</h3>
+                            <p>A complete redesign resulting in 40% increased sales.</p>
+                            <a href="#" class="btn-link">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="portfolio-item glass-card image-bg pos-1">
+                        <div class="overlay">
+                            <h4>Crypto Dashboard</h4>
+                        </div>
+                    </div>
+                    <div class="portfolio-item glass-card image-bg pos-2">
+                        <div class="overlay">
+                            <h4>Arcade Web Game</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact fade-in-section">
+            <div class="container glass-card contact-box">
+                <div class="contact-info">
+                    <h2>Let's build something <span class="gradient-text">amazing</span></h2>
+                    <p>Ready to start your next project? Get in touch with us today.</p>
+                </div>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" required placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-100">Send Message</button>
+                </form>
+            </div>
+        <!-- Client Dashboard Section -->
+        <section id="client-dashboard" class="dashboard-section fade-in-section" style="display:none;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Client <span class="gradient-text">Dashboard</span></h2>
+                    <p>Manage your projects and support tickets.</p>
+                </div>
+                <div class="dashboard-grid">
+                    <div class="dashboard-card glass-card">
+                        <h3>Your Orders</h3>
+                        <div id="orders-list" class="orders-table-container">
+                            <p class="loading-text">Loading orders...</p>
+                        </div>
+                    </div>
+                    <div class="dashboard-card glass-card">
+                        <h3>Support Tickets</h3>
+                        <div id="tickets-list" class="tickets-container">
+                            <p class="loading-text">Loading tickets...</p>
+                        </div>
+                        <button class="btn-primary outline w-100" style="margin-top: 1rem;" id="createTicketBtn">Create New Ticket</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Admin Dashboard Section -->
+        <section id="admin-dashboard" class="dashboard-section fade-in-section" style="display:none;">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Admin <span class="gradient-text">Console</span></h2>
+                    <p>Overview of agency performance and order management.</p>
+                </div>
+                <div class="stats-row" id="admin-stats-row">
+                    <div class="stat-box glass-card">
+ <h4 id="stat-revenue" class="gradient-text">₹0</h4>
+                        <p>Total Revenue</p>
+                    </div>
+                    <div class="stat-box glass-card">
+                        <h4 id="stat-orders" class="gradient-text">0</h4>
+                        <p>Total Orders</p>
+                    </div>
+                    <div class="stat-box glass-card">
+                        <h4 id="stat-users" class="gradient-text">0</h4>
+                        <p>Clients</p>
+                    </div>
+                </div>
+                <div class="dashboard-card glass-card" style="margin-top: 2rem;">
+                    <h3>All Orders</h3>
+                    <div id="admin-orders-list" class="orders-table-container">
+                        <p class="loading-text">Loading all orders...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="logo-text">JAYVEER<span class="highlight">.</span></span>
+                <p>Elevating digital experiences.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-col">
+                    <h4>Navigate</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#products">Products</a>
+                </div>
+                <div class="link-col">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 JAYVEER Digital. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal" id="closeAuth">&times;</span>
+            <h2 class="gradient-text" id="authTitle">Welcome Back</h2>
+            <p id="authSubtitle">Log in to safely access your dashboard.</p>
+            <form id="authForm" class="contact-form modal-form">
+                <input type="hidden" name="action" id="authAction" value="login">
+                <div class="form-group" id="nameGroup" style="display: none;">
+                    <label for="auth-name">Full Name</label>
+                    <input type="text" id="auth-name" name="name" placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="username">Email</label>
+                    <input type="email" id="username" name="email" required placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="••••••••">
+                </div>
+                <button type="submit" class="btn-primary w-100" id="authSubmitBtn">Log In</button>
+                <div style="text-align: center; margin-top: 1rem;">
+                    <a href="#" id="toggleAuthMode" class="btn-link" style="font-size: 0.85rem;">Don't have an account? Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal" id="closePayment">&times;</span>
+            <h2 class="gradient-text">Checkout</h2>
+            <p>Complete your purchase securely.</p>
+            <form id="paymentForm" class="contact-form modal-form">
+                <div class="form-group">
+                    <label for="cardName">Name on Card</label>
+                    <input type="text" id="cardName" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="1234 5678 9101 1121" required>
+                </div>
+                <div class="form-row" style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="expiry">Expiry</label>
+                        <input type="text" id="expiry" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary w-100" id="payNowBtn">Pay Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Ticket Modal -->
+    <div id="ticket-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal" id="closeTicket">&times;</span>
+            <h2 class="gradient-text">Create Ticket</h2>
+            <p>Tell us what's on your mind.</p>
+            <form id="ticketForm" class="contact-form modal-form">
+                <div class="form-group">
+                    <label for="ticket-subject">Subject</label>
+                    <input type="text" id="ticket-subject" name="subject" required placeholder="Question about my order...">
+                </div>
+                <div class="form-group">
+                    <label for="ticket-message">Message</label>
+                    <textarea id="ticket-message" name="message" rows="4" required placeholder="I would like to change..."></textarea>
+                </div>
+                <button type="submit" class="btn-primary w-100">Submit Ticket</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- AI Chat Assistant -->
+    <div id="ai-chat-btn" class="ai-chat-circle" title="Chat with JAYVEER AI">
+        <span class="chat-icon">✨</span>
+    </div>
+
+    <div id="ai-chat-window" class="chat-window glass-card">
+        <div class="chat-header">
+            <span class="status-dot"></span>
+            <strong>JAYVEER AI Assistant</strong>
+            <button id="closeChat">&times;</button>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="msg bot">
+                Hello! I'm the JAYVEER AI Assistant. How can I help you today with our digital services?
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type a message...">
+            <button id="send-chat">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
